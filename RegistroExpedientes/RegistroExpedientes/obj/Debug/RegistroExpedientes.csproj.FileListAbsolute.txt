@@ -1,0 +1,13 @@
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.exe.config
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.exe
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.pdb
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.csprojResolveAssemblyReference.cache
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.Form1.resources
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.Properties.Resources.resources
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.csproj.GenerateResource.Cache
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.exe
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.pdb
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.inicio.resources
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.registros.resources
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.usuarios.resources
+C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.login.resources
