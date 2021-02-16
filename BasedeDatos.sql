@@ -1,15 +1,17 @@
 create database entradas;
 use entradas;
 
+drop table datos
 create table datos (
 id int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 exp_año varchar(50) unique not null,
-fechain date not null,
+fechain date,
 nombre varchar(50) not null,
 apellido varchar(50) not null,
 infracciones varchar(30) not null,
-ofendidos varchar(200) not null,
+ofendidos varchar(200),
 audienciainicial date,
+numpag int,
 observaciones varchar(200)
 );
 

@@ -36,7 +36,7 @@ namespace RegistroExpedientes
         private void btnguardar_Click(object sender, EventArgs e)
         {
             conectar.Abrir();
-            if (txtexpediente.Text == "" || dateentrada.Text == "" || txtnombres.Text == "" || txtapellidos.Text == "" || txtinfracciones.Text == "" || txtofendidos.Text == "")
+            if (txtexpediente.Text == "" || txtnombres.Text == "" || txtapellidos.Text == "" || txtinfracciones.Text == "")
             {
                 MessageBox.Show("Campos vacios");
             }
@@ -47,8 +47,8 @@ namespace RegistroExpedientes
                     DateTime enteri = Convert.ToDateTime(dateentrada.Value.Date.ToString("dd-MM-yyyy"));
                     DateTime audi = Convert.ToDateTime(dateaudiencia.Value.Date.ToString("dd-MM-yyyy"));
                     string InsertarRegistros;
-                    InsertarRegistros = "INSERT INTO datos(exp_año, fechain, nombre, apellido, infracciones, ofendidos, audienciainicial, observaciones)";
-                    InsertarRegistros += "VALUES (@exp_año, @fechain, @nombre, @apellido, @infracciones, @ofendidos, @audienciainicial, @observaciones)";
+                    InsertarRegistros = "INSERT INTO datos(exp_año, fechain, nombre, apellido, infracciones, ofendidos, audienciainicial, numpag, observaciones)";
+                    InsertarRegistros += "VALUES (@exp_año, @fechain, @nombre, @apellido, @infracciones, @ofendidos, @audienciainicial, @numpag, @observaciones)";
                     insert1 = new SqlCommand(InsertarRegistros, conectar.con);
 
                     insert1.Parameters.Add(new SqlParameter("@exp_año", SqlDbType.VarChar));
@@ -65,6 +65,8 @@ namespace RegistroExpedientes
                     insert1.Parameters["@ofendidos"].Value = txtofendidos.Text;
                     insert1.Parameters.Add(new SqlParameter("@audienciainicial", SqlDbType.Date));
                     insert1.Parameters["@audienciainicial"].Value = audi;
+                    insert1.Parameters.Add(new SqlParameter("@numpag", SqlDbType.Int));
+                    insert1.Parameters["@numpag"].Value = txtpag.Text;
                     insert1.Parameters.Add(new SqlParameter("@observaciones", SqlDbType.VarChar));
                     insert1.Parameters["@observaciones"].Value = txtobservaciones.Text;
 
@@ -80,6 +82,7 @@ namespace RegistroExpedientes
                     txtinfracciones.Text = "";
                     txtofendidos.Text = "";
                     dateaudiencia.Text = "";
+                    txtpag.Text = "";
                     txtobservaciones.Text = "";
 
                     MessageBox.Show("Registro agregado");
@@ -105,6 +108,7 @@ namespace RegistroExpedientes
             txtinfracciones.Text = "";
             txtofendidos.Text = "";
             dateaudiencia.Text = "";
+            txtpag.Text = "";
             txtobservaciones.Text = "";
         }
 
@@ -132,7 +136,7 @@ namespace RegistroExpedientes
                 //DateTime aud = Convert.ToDateTime(dateaudiencia.Value.Date.ToString("dd-MM-yyyy"));
                 var enter = dateentrada.Value.ToString("yyyy-MM-dd");
                 var aud = dateaudiencia.Value.ToString("yyyy-MM-dd");
-                SqlCommand cmd = new SqlCommand("UPDATE datos SET exp_año='" + txtexpediente.Text + "' ,fechain='" + enter + "', nombre='" + txtnombres.Text + "', apellido='" + txtapellidos.Text + "', infracciones='" + txtinfracciones.Text + "', ofendidos='" + txtofendidos.Text + "', audienciainicial='" + aud + "', observaciones='" + txtobservaciones.Text + "' " + "where id='" + codigo.Text + "'", conectar.con);
+                SqlCommand cmd = new SqlCommand("UPDATE datos SET exp_año='" + txtexpediente.Text + "' ,fechain='" + enter + "', nombre='" + txtnombres.Text + "', apellido='" + txtapellidos.Text + "', infracciones='" + txtinfracciones.Text + "', ofendidos='" + txtofendidos.Text + "', audienciainicial='" + aud + "',numpag='" + txtpag.Text + "', observaciones='" + txtobservaciones.Text + "' " + "where id='" + codigo.Text + "'", conectar.con);
                 int filas = cmd.ExecuteNonQuery();
                 conectar.Cerrar();
 
@@ -143,7 +147,9 @@ namespace RegistroExpedientes
                 txtapellidos.Text = "";
                 txtinfracciones.Text = "";
                 txtofendidos.Text = "";
+                txtpag.Text = "";
                 dateaudiencia.Text = "";
+
                 txtobservaciones.Text = "";
 
                 if (filas > 0)
@@ -179,7 +185,8 @@ namespace RegistroExpedientes
             txtinfracciones.Text = Convert.ToString(fila.Cells[5].Value);
             txtofendidos.Text = Convert.ToString(fila.Cells[6].Value);
             dateaudiencia.Text = Convert.ToString(fila.Cells[7].Value);
-            txtobservaciones.Text = Convert.ToString(fila.Cells[8].Value);
+            txtpag.Text = Convert.ToString(fila.Cells[8].Value);
+            txtobservaciones.Text = Convert.ToString(fila.Cells[9].Value);
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -199,6 +206,7 @@ namespace RegistroExpedientes
                 txtinfracciones.Text = "";
                 txtofendidos.Text = "";
                 dateaudiencia.Text = "";
+                txtpag.Text = "";
                 txtobservaciones.Text = "";
 
                 if (filas > 0)

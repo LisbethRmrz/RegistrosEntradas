@@ -47,7 +47,7 @@ namespace RegistroExpedientes
         {
             try
             {
-                da = new SqlDataAdapter("select id as [No.], exp_año as [Expediente], fechain as [Entrada], nombre as [Nombre], apellido as [Apellido], infracciones as [Infracciones], ofendidos as [Ofendido(s)], audienciainicial as [Audiencia Inicial], observaciones as [Observaciones] from datos", con);
+                da = new SqlDataAdapter("select id as [No.], exp_año as [Expediente], fechain as [Entrada], nombre as [Nombre], apellido as [Apellido], infracciones as [Infracciones], ofendidos as [Ofendido(s)], audienciainicial as [Audiencia Inicial], numpag as [Página], observaciones as [Observaciones] from datos", con);
                 dt = new DataTable();
                 da.Fill(dt);
                 dgv.DataSource = dt;

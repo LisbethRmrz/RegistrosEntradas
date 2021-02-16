@@ -28,6 +28,7 @@ namespace RegistroExpedientes
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
+            conectar.Abrir();
             try
             {
                 string InsertarUsuarios;
