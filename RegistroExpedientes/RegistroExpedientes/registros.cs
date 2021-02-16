@@ -149,7 +149,7 @@ namespace RegistroExpedientes
                 txtofendidos.Text = "";
                 txtpag.Text = "";
                 dateaudiencia.Text = "";
-
+                txtpag.Text = "";
                 txtobservaciones.Text = "";
 
                 if (filas > 0)

@@ -71,6 +71,63 @@ namespace RegistroExpedientes
             }
             conectar.Cerrar();
         }
-        
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            txtid.Text = "";
+            txtuser.Text = "";
+            txtnombre.Text = "";
+            txtapellido.Text = "";
+            txtcorreo.Text = "";
+            txtcargo.Text = "";
+            txtcorreo.Text = "";
+        }
+
+        private void btnactualizar_Click(object sender, EventArgs e)
+        {
+            conectar.Abrir();
+            try
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE usuarios SET usuario='" + txtuser.Text + "' ,nombres='" + txtnombre.Text + "', apellidos='" + txtapellido.Text + "', correo='" + txtcorreo.Text + "', cargo='" + txtcargo.Text + "', contra='" + txtcontraseña.Text + "' " + "where id='" + txtid.Text + "'", conectar.con);
+                int filas = cmd.ExecuteNonQuery();
+                conectar.Cerrar();
+
+                txtid.Text = "";
+                txtuser.Text = "";
+                txtnombre.Text = "";
+                txtapellido.Text = "";
+                txtcorreo.Text = "";
+                txtcargo.Text = "";
+                txtcorreo.Text = "";
+
+                if (filas > 0)
+                {
+                    MessageBox.Show("Usuario actualizado correctamente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Error al actualizar.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show("" + ex.Message);
+            }
+            conectar.CargarUsuarios(DatosUsuarios);
+            conectar.Cerrar();
+        }
+
+        private void DatosUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow fila = DatosUsuarios.Rows[e.RowIndex];
+            txtid.Text = Convert.ToString(fila.Cells[0].Value);
+            txtuser.Text = Convert.ToString(fila.Cells[1].Value);
+            txtnombre.Text = Convert.ToString(fila.Cells[2].Value);
+            txtapellido.Text = Convert.ToString(fila.Cells[3].Value);
+            txtcorreo.Text = Convert.ToString(fila.Cells[4].Value);
+            txtcargo.Text = Convert.ToString(fila.Cells[5].Value);
+            txtcontraseña.Text = Convert.ToString(fila.Cells[6].Value);
+        }
     }
 }
