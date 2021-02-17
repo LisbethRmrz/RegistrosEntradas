@@ -25,3 +25,4 @@ C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Pro
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.usuarios.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.csproj.GenerateResource.Cache
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.Auxiliar.resources
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.RecuperarContraseña.resources

@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
+            this.restorepass = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
@@ -50,7 +51,7 @@
             this.btnacceder.Name = "btnacceder";
             this.btnacceder.Size = new System.Drawing.Size(251, 36);
             this.btnacceder.TabIndex = 18;
-            this.btnacceder.Text = "ACCEDER";
+            this.btnacceder.Text = "Ingresar";
             this.btnacceder.UseVisualStyleBackColor = true;
             this.btnacceder.Click += new System.EventHandler(this.btnacceder_Click);
             // 
@@ -98,7 +99,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 261);
+            this.panel1.Size = new System.Drawing.Size(200, 278);
             this.panel1.TabIndex = 14;
             // 
             // pictureBox1
@@ -133,11 +134,23 @@
             this.btnminimizar.TabStop = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
+            // restorepass
+            // 
+            this.restorepass.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restorepass.Location = new System.Drawing.Point(253, 230);
+            this.restorepass.Name = "restorepass";
+            this.restorepass.Size = new System.Drawing.Size(359, 36);
+            this.restorepass.TabIndex = 21;
+            this.restorepass.Text = "Restaurar Contraseña";
+            this.restorepass.UseVisualStyleBackColor = true;
+            this.restorepass.Click += new System.EventHandler(this.restorepass_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 261);
+            this.ClientSize = new System.Drawing.Size(669, 278);
+            this.Controls.Add(this.restorepass);
             this.Controls.Add(this.btnacceder);
             this.Controls.Add(this.txtcontraseña);
             this.Controls.Add(this.txtusuario);
@@ -149,6 +162,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.Text = "login";
+            this.Load += new System.EventHandler(this.login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -169,5 +183,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btncerrar;
         private System.Windows.Forms.PictureBox btnminimizar;
+        private System.Windows.Forms.Button restorepass;
     }
 }

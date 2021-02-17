@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
+using System.Net.Mail;
+using System.Net;
 
 namespace RegistroExpedientes
 {
@@ -139,6 +141,18 @@ namespace RegistroExpedientes
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void restorepass_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            RecuperarContraseña RC = new RecuperarContraseña();
+            RC.Visible = true;
         }
     }
 }
