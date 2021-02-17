@@ -215,7 +215,7 @@ namespace RegistroExpedientes
                 }
                 else
                 {
-                    MessageBox.Show("Error al eliminar el registro.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al eliminar el Registro.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex){

@@ -124,6 +124,13 @@ namespace RegistroExpedientes
             AbrirFormInPanel<usuarios>();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login log = new login();
+            log.Show();
+        }
+
         private void btnslide_Click(object sender, EventArgs e)
         {
             if (panelmenu.Width == 250)

@@ -146,6 +146,7 @@
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnminimizar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.Text = "login";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
