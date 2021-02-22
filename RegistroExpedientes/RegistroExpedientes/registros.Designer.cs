@@ -49,6 +49,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelDGVprimero = new System.Windows.Forms.Panel();
             this.panelDatosprimero = new System.Windows.Forms.Panel();
+            this.txtpag = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.dateaudiencia = new System.Windows.Forms.DateTimePicker();
             this.dateentrada = new System.Windows.Forms.DateTimePicker();
             this.txtobservaciones = new System.Windows.Forms.TextBox();
@@ -59,8 +61,10 @@
             this.txtinfracciones = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.codigo = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtpag = new System.Windows.Forms.TextBox();
+            this.asterisk = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DatosRegistros)).BeginInit();
             this.panelDGVprimero.SuspendLayout();
             this.panelDatosprimero.SuspendLayout();
@@ -225,7 +229,7 @@
             // 
             // txtapellidos
             // 
-            this.txtapellidos.Location = new System.Drawing.Point(223, 124);
+            this.txtapellidos.Location = new System.Drawing.Point(255, 126);
             this.txtapellidos.Name = "txtapellidos";
             this.txtapellidos.Size = new System.Drawing.Size(278, 20);
             this.txtapellidos.TabIndex = 14;
@@ -233,7 +237,7 @@
             // 
             // txtnombres
             // 
-            this.txtnombres.Location = new System.Drawing.Point(223, 89);
+            this.txtnombres.Location = new System.Drawing.Point(255, 89);
             this.txtnombres.Name = "txtnombres";
             this.txtnombres.Size = new System.Drawing.Size(278, 20);
             this.txtnombres.TabIndex = 13;
@@ -241,7 +245,7 @@
             // 
             // txtexpediente
             // 
-            this.txtexpediente.Location = new System.Drawing.Point(223, 18);
+            this.txtexpediente.Location = new System.Drawing.Point(255, 20);
             this.txtexpediente.Name = "txtexpediente";
             this.txtexpediente.Size = new System.Drawing.Size(278, 20);
             this.txtexpediente.TabIndex = 9;
@@ -298,6 +302,10 @@
             // 
             // panelDatosprimero
             // 
+            this.panelDatosprimero.Controls.Add(this.label14);
+            this.panelDatosprimero.Controls.Add(this.label13);
+            this.panelDatosprimero.Controls.Add(this.label12);
+            this.panelDatosprimero.Controls.Add(this.asterisk);
             this.panelDatosprimero.Controls.Add(this.txtpag);
             this.panelDatosprimero.Controls.Add(this.label11);
             this.panelDatosprimero.Controls.Add(this.dateaudiencia);
@@ -325,6 +333,24 @@
             this.panelDatosprimero.Size = new System.Drawing.Size(1030, 260);
             this.panelDatosprimero.TabIndex = 16;
             // 
+            // txtpag
+            // 
+            this.txtpag.Location = new System.Drawing.Point(740, 124);
+            this.txtpag.Name = "txtpag";
+            this.txtpag.Size = new System.Drawing.Size(278, 20);
+            this.txtpag.TabIndex = 32;
+            this.txtpag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpag_KeyPress);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(576, 124);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(146, 20);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Número de Página";
+            // 
             // dateaudiencia
             // 
             this.dateaudiencia.Location = new System.Drawing.Point(740, 55);
@@ -334,7 +360,7 @@
             // 
             // dateentrada
             // 
-            this.dateentrada.Location = new System.Drawing.Point(223, 54);
+            this.dateentrada.Location = new System.Drawing.Point(255, 53);
             this.dateentrada.Name = "dateentrada";
             this.dateentrada.Size = new System.Drawing.Size(278, 20);
             this.dateentrada.TabIndex = 29;
@@ -386,7 +412,7 @@
             // 
             // txtinfracciones
             // 
-            this.txtinfracciones.Location = new System.Drawing.Point(223, 161);
+            this.txtinfracciones.Location = new System.Drawing.Point(255, 159);
             this.txtinfracciones.Name = "txtinfracciones";
             this.txtinfracciones.Size = new System.Drawing.Size(278, 20);
             this.txtinfracciones.TabIndex = 22;
@@ -409,22 +435,49 @@
             this.codigo.TabIndex = 18;
             this.codigo.Visible = false;
             // 
-            // label11
+            // asterisk
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(576, 124);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(146, 20);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "Número de Página";
+            this.asterisk.AutoSize = true;
+            this.asterisk.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.asterisk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.asterisk.Location = new System.Drawing.Point(227, 21);
+            this.asterisk.Name = "asterisk";
+            this.asterisk.Size = new System.Drawing.Size(24, 29);
+            this.asterisk.TabIndex = 28;
+            this.asterisk.Text = "*";
             // 
-            // txtpag
+            // label12
             // 
-            this.txtpag.Location = new System.Drawing.Point(740, 124);
-            this.txtpag.Name = "txtpag";
-            this.txtpag.Size = new System.Drawing.Size(278, 20);
-            this.txtpag.TabIndex = 32;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.label12.Location = new System.Drawing.Point(227, 89);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(24, 29);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "*";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.label13.Location = new System.Drawing.Point(227, 124);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(24, 29);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "*";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.label14.Location = new System.Drawing.Point(227, 159);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(24, 29);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "*";
             // 
             // registros
             // 
@@ -481,5 +534,9 @@
         private System.Windows.Forms.TextBox codigo;
         private System.Windows.Forms.TextBox txtpag;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label asterisk;
     }
 }

@@ -35,9 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
-            this.restorepass = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
@@ -46,18 +46,23 @@
             // 
             // btnacceder
             // 
-            this.btnacceder.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnacceder.Location = new System.Drawing.Point(298, 174);
+            this.btnacceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.btnacceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.btnacceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.btnacceder.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.btnacceder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnacceder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnacceder.Location = new System.Drawing.Point(302, 174);
             this.btnacceder.Name = "btnacceder";
-            this.btnacceder.Size = new System.Drawing.Size(251, 36);
+            this.btnacceder.Size = new System.Drawing.Size(251, 29);
             this.btnacceder.TabIndex = 18;
             this.btnacceder.Text = "Ingresar";
-            this.btnacceder.UseVisualStyleBackColor = true;
+            this.btnacceder.UseVisualStyleBackColor = false;
             this.btnacceder.Click += new System.EventHandler(this.btnacceder_Click);
             // 
             // txtcontraseña
             // 
-            this.txtcontraseña.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontraseña.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtcontraseña.ForeColor = System.Drawing.Color.Black;
             this.txtcontraseña.Location = new System.Drawing.Point(298, 132);
             this.txtcontraseña.Name = "txtcontraseña";
@@ -70,7 +75,7 @@
             // txtusuario
             // 
             this.txtusuario.BackColor = System.Drawing.SystemColors.Window;
-            this.txtusuario.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusuario.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtusuario.ForeColor = System.Drawing.Color.Black;
             this.txtusuario.Location = new System.Drawing.Point(298, 96);
             this.txtusuario.Name = "txtusuario";
@@ -84,13 +89,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(402, 42);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(357, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.Size = new System.Drawing.Size(141, 23);
             this.label1.TabIndex = 15;
-            this.label1.Text = "LOGIN";
+            this.label1.Text = "Iniciar Sesión";
             // 
             // panel1
             // 
@@ -105,6 +111,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(3, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 110);
@@ -112,10 +119,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.linkLabel1.Location = new System.Drawing.Point(367, 216);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(122, 15);
+            this.linkLabel1.TabIndex = 22;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Olvidé mi contraseña";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // btncerrar
             // 
             this.btncerrar.Image = global::RegistroExpedientes.Properties.Resources.close;
-            this.btncerrar.Location = new System.Drawing.Point(618, 0);
+            this.btncerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btncerrar.Location = new System.Drawing.Point(653, 0);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(15, 15);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,7 +150,8 @@
             // btnminimizar
             // 
             this.btnminimizar.Image = global::RegistroExpedientes.Properties.Resources.minimizarM;
-            this.btnminimizar.Location = new System.Drawing.Point(597, 0);
+            this.btnminimizar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnminimizar.Location = new System.Drawing.Point(632, 0);
             this.btnminimizar.Name = "btnminimizar";
             this.btnminimizar.Size = new System.Drawing.Size(15, 15);
             this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,23 +159,12 @@
             this.btnminimizar.TabStop = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
-            // restorepass
-            // 
-            this.restorepass.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.restorepass.Location = new System.Drawing.Point(253, 230);
-            this.restorepass.Name = "restorepass";
-            this.restorepass.Size = new System.Drawing.Size(359, 36);
-            this.restorepass.TabIndex = 21;
-            this.restorepass.Text = "Restaurar Contraseña";
-            this.restorepass.UseVisualStyleBackColor = true;
-            this.restorepass.Click += new System.EventHandler(this.restorepass_Click);
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 278);
-            this.Controls.Add(this.restorepass);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnacceder);
             this.Controls.Add(this.txtcontraseña);
             this.Controls.Add(this.txtusuario);
@@ -161,6 +175,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
@@ -183,6 +198,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btncerrar;
         private System.Windows.Forms.PictureBox btnminimizar;
-        private System.Windows.Forms.Button restorepass;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

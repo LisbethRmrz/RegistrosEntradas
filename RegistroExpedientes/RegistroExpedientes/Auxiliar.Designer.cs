@@ -207,6 +207,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Auxiliar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auxiliar";
             this.Load += new System.EventHandler(this.Auxiliar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnmax)).EndInit();

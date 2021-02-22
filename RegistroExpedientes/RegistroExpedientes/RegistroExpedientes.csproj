@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarContraseña.Designer.cs">
+      <DependentUpon>ActualizarContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Auxiliar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="usuarios.Designer.cs">
       <DependentUpon>usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarContraseña.resx">
+      <DependentUpon>ActualizarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Auxiliar.resx">
       <DependentUpon>Auxiliar.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimizarM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

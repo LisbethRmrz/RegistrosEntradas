@@ -38,7 +38,7 @@ namespace RegistroExpedientes
             conectar.Abrir();
             if (txtexpediente.Text == "" || txtnombres.Text == "" || txtapellidos.Text == "" || txtinfracciones.Text == "")
             {
-                MessageBox.Show("Campos vacios");
+                MessageBox.Show("Error, todos los campos que contengan (*) deben estar llenos");
             }
             else
             {
@@ -86,14 +86,14 @@ namespace RegistroExpedientes
                     txtobservaciones.Text = "";
 
                     MessageBox.Show("Registro agregado");
-                    conectar.CargarRegistros(DatosRegistros);             
+                    conectar.CargarRegistros(DatosRegistros);
                     conectar.Cerrar();
                 }
 
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error" + ex.Message);
-                }               
+                }
             }
             conectar.Cerrar();
         }
@@ -119,12 +119,12 @@ namespace RegistroExpedientes
 
         private void btnguardar_MouseHover(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnguardar_MouseLeave(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnactualizar_Click(object sender, EventArgs e)
@@ -192,7 +192,8 @@ namespace RegistroExpedientes
         private void btneliminar_Click(object sender, EventArgs e)
         {
             conectar.Abrir();
-            try {
+            try
+            {
                 SqlCommand cmd = new SqlCommand("DELETE FROM datos WHERE id='" + codigo.Text + "'", conectar.con);
                 int filas = cmd.ExecuteNonQuery();
                 conectar.CargarRegistros(DatosRegistros);
@@ -218,7 +219,8 @@ namespace RegistroExpedientes
                     MessageBox.Show("Error al eliminar el Registro.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex){
+            catch (Exception ex)
+            {
                 MessageBox.Show("" + ex.Message);
             }
             conectar.Cerrar();
@@ -262,6 +264,16 @@ namespace RegistroExpedientes
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Space) && (e.KeyChar != (char)Keys.Back))
             {
                 MessageBox.Show("Asegurese de ingresar únicamente letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtpag_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((char.IsLetter(e.KeyChar)))
+            {
+                MessageBox.Show("Asegurese de ingresar únicamente números", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }

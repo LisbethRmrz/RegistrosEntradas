@@ -27,7 +27,10 @@ namespace RegistroExpedientes
 
         private void RecuperarBT_Click(object sender, EventArgs e)
         {
-
+            ActualizarContraseña AC = new ActualizarContraseña();
+            AC.Usuario = UsuarioText.Text;
+            this.Visible = false;
+            AC.Visible = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -93,6 +96,24 @@ namespace RegistroExpedientes
             }
             dr.Close();
             conect.Close();
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            this.Visible = false;
+            login log = new login();
+            log.Visible = true;
         }
     }
 }
