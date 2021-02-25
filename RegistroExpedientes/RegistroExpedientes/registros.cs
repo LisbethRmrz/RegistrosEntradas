@@ -38,7 +38,7 @@ namespace RegistroExpedientes
             conectar.Abrir();
             if (txtexpediente.Text == "" || txtnombres.Text == "" || txtapellidos.Text == "" || txtinfracciones.Text == "")
             {
-                MessageBox.Show("Error, todos los campos que contengan (*) deben estar llenos");
+                MessageBox.Show("Los campos que contengan (*) deben estar llenos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -85,7 +85,7 @@ namespace RegistroExpedientes
                     txtpag.Text = "";
                     txtobservaciones.Text = "";
 
-                    MessageBox.Show("Registro agregado");
+                    MessageBox.Show("Registro agregado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conectar.CargarRegistros(DatosRegistros);
                     conectar.Cerrar();
                 }
@@ -129,44 +129,56 @@ namespace RegistroExpedientes
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
-            conectar.Abrir();
-            try
+            
+
+            if (txtexpediente.Text == "" || txtnombres.Text == "" || txtapellidos.Text == "" || txtinfracciones.Text == "")
             {
-                //DateTime enter = Convert.ToDateTime(dateentrada.Value.Date.ToString("dd-MM-yyyy"));
-                //DateTime aud = Convert.ToDateTime(dateaudiencia.Value.Date.ToString("dd-MM-yyyy"));
-                var enter = dateentrada.Value.ToString("yyyy-MM-dd");
-                var aud = dateaudiencia.Value.ToString("yyyy-MM-dd");
-                SqlCommand cmd = new SqlCommand("UPDATE datos SET exp_año='" + txtexpediente.Text + "' ,fechain='" + enter + "', nombre='" + txtnombres.Text + "', apellido='" + txtapellidos.Text + "', infracciones='" + txtinfracciones.Text + "', ofendidos='" + txtofendidos.Text + "', audienciainicial='" + aud + "',numpag='" + txtpag.Text + "', observaciones='" + txtobservaciones.Text + "' " + "where id='" + codigo.Text + "'", conectar.con);
-                int filas = cmd.ExecuteNonQuery();
+                MessageBox.Show("Los campos que contengan (*) deben estar llenos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                conectar.Abrir();
+                try
+                {
+                    //DateTime enter = Convert.ToDateTime(dateentrada.Value.Date.ToString("dd-MM-yyyy"));
+                    //DateTime aud = Convert.ToDateTime(dateaudiencia.Value.Date.ToString("dd-MM-yyyy"));
+                    var enter = dateentrada.Value.ToString("yyyy-MM-dd");
+                    var aud = dateaudiencia.Value.ToString("yyyy-MM-dd");
+                    SqlCommand cmd = new SqlCommand("UPDATE datos SET exp_año='" + txtexpediente.Text + "' ,fechain='" + enter + "', nombre='" + txtnombres.Text + "', apellido='" + txtapellidos.Text + "', infracciones='" + txtinfracciones.Text + "', ofendidos='" + txtofendidos.Text + "', audienciainicial='" + aud + "',numpag='" + txtpag.Text + "', observaciones='" + txtobservaciones.Text + "' " + "where id='" + codigo.Text + "'", conectar.con);
+                    int filas = cmd.ExecuteNonQuery();
+                    conectar.Cerrar();
+
+                    codigo.Text = "";
+                    txtexpediente.Text = "";
+                    dateentrada.Text = "";
+                    txtnombres.Text = "";
+                    txtapellidos.Text = "";
+                    txtinfracciones.Text = "";
+                    txtofendidos.Text = "";
+                    txtpag.Text = "";
+                    dateaudiencia.Text = "";
+                    txtpag.Text = "";
+                    txtobservaciones.Text = "";
+
+                    if (filas > 0)
+                    {
+                        MessageBox.Show("Registro actualizado correctamente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al actualizar.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("" + ex.Message);
+                }
+
+                conectar.CargarRegistros(DatosRegistros);
                 conectar.Cerrar();
-
-                codigo.Text = "";
-                txtexpediente.Text = "";
-                dateentrada.Text = "";
-                txtnombres.Text = "";
-                txtapellidos.Text = "";
-                txtinfracciones.Text = "";
-                txtofendidos.Text = "";
-                txtpag.Text = "";
-                dateaudiencia.Text = "";
-                txtpag.Text = "";
-                txtobservaciones.Text = "";
-
-                if (filas > 0)
-                {
-                    MessageBox.Show("Registro actualizado correctamente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Error al actualizar.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("" + ex.Message);
-            }
-            conectar.CargarRegistros(DatosRegistros);
-            conectar.Cerrar();
+            
         }
 
         private void DatosRegistros_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("RegistroExpedientes")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard")]
+[assembly: AssemblyCompany("ServicioSocial-UDB")]
 [assembly: AssemblyProduct("RegistroExpedientes")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2021")]
+[assembly: AssemblyCopyright("Copyright © ServicioSocial-UDB 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

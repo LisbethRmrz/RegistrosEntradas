@@ -33,9 +33,9 @@ namespace RegistroExpedientes
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            if (txtuser.Text == "" || txtnombre.Text == "" || txtapellido.Text == "" || txtcorreo.Text == "" || txtcontraseña.Text == "")
+            if (txtuser.Text == "" || txtnombre.Text == "" || txtapellido.Text == "" || txtcargo.Text == "" || txtcorreo.Text == "" || txtcontraseña.Text == "")
             {
-                MessageBox.Show("Error, todos los campos que contengan (*) deben estar llenos");
+                MessageBox.Show("Los campos que contengan (*) deben estar llenos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -70,8 +70,9 @@ namespace RegistroExpedientes
                     txtcorreo.Text = "";
                     txtcargo.Text = "";
                     txtcorreo.Text = "";
+                    txtcontraseña.Text = "";
 
-                    MessageBox.Show("Usuario agregado");
+                    MessageBox.Show("Usuario agregado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conectar.CargarUsuarios(DatosUsuarios);
                     conectar.Cerrar();
                 }
@@ -94,41 +95,50 @@ namespace RegistroExpedientes
             txtcorreo.Text = "";
             txtcargo.Text = "";
             txtcorreo.Text = "";
+            txtcontraseña.Text = "";
         }
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
-            conectar.Abrir();
-            try
+            if (txtuser.Text == "" || txtnombre.Text == "" || txtapellido.Text == "" || txtcargo.Text == "" || txtcorreo.Text == "" || txtcontraseña.Text == "")
             {
-                SqlCommand cmd = new SqlCommand("UPDATE usuarios SET usuario='" + txtuser.Text + "' ,nombres='" + txtnombre.Text + "', apellidos='" + txtapellido.Text + "', correo='" + txtcorreo.Text + "', cargo='" + txtcargo.Text + "', contra='" + txtcontraseña.Text + "' " + "where id='" + txtid.Text + "'", conectar.con);
-                int filas = cmd.ExecuteNonQuery();
+                MessageBox.Show("Los campos que contengan (*) deben estar llenos", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                conectar.Abrir();
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("UPDATE usuarios SET usuario='" + txtuser.Text + "' ,nombres='" + txtnombre.Text + "', apellidos='" + txtapellido.Text + "', correo='" + txtcorreo.Text + "', cargo='" + txtcargo.Text + "', contra='" + txtcontraseña.Text + "' " + "where id='" + txtid.Text + "'", conectar.con);
+                    int filas = cmd.ExecuteNonQuery();
+                    conectar.Cerrar();
+
+                    txtid.Text = "";
+                    txtuser.Text = "";
+                    txtnombre.Text = "";
+                    txtapellido.Text = "";
+                    txtcorreo.Text = "";
+                    txtcargo.Text = "";
+                    txtcorreo.Text = "";
+                    txtcontraseña.Text = "";
+
+                    if (filas > 0)
+                    {
+                        MessageBox.Show("Usuario actualizado correctamente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al actualizar.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("" + ex.Message);
+                }
+                conectar.CargarUsuarios(DatosUsuarios);
                 conectar.Cerrar();
-
-                txtid.Text = "";
-                txtuser.Text = "";
-                txtnombre.Text = "";
-                txtapellido.Text = "";
-                txtcorreo.Text = "";
-                txtcargo.Text = "";
-                txtcorreo.Text = "";
-
-                if (filas > 0)
-                {
-                    MessageBox.Show("Usuario actualizado correctamente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Error al actualizar.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
-
-            catch(Exception ex)
-            {
-                MessageBox.Show("" + ex.Message);
-            }
-            conectar.CargarUsuarios(DatosUsuarios);
-            conectar.Cerrar();
         }
 
         private void DatosUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -160,6 +170,7 @@ namespace RegistroExpedientes
                 txtcorreo.Text = "";
                 txtcargo.Text = "";
                 txtcorreo.Text = "";
+                txtcontraseña.Text = "";
 
                 if (filas > 0)
                 {
