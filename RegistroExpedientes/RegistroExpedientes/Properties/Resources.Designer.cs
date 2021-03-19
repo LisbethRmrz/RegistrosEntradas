@@ -63,6 +63,16 @@ namespace RegistroExpedientes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualizar {
+            get {
+                object obj = ResourceManager.GetObject("actualizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
@@ -76,6 +86,26 @@ namespace RegistroExpedientes.Properties {
         internal static System.Drawing.Bitmap back__1_ {
             get {
                 object obj = ResourceManager.GetObject("back (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buscar {
+            get {
+                object obj = ResourceManager.GetObject("buscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("c-removebg-preview (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

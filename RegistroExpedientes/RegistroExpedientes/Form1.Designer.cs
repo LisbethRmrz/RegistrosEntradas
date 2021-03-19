@@ -42,6 +42,7 @@
             this.btnmin = new System.Windows.Forms.PictureBox();
             this.btnmax = new System.Windows.Forms.PictureBox();
             this.paneltitulo = new System.Windows.Forms.Panel();
+            this.bton_violencia = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
             this.panelmenu.SuspendLayout();
@@ -58,7 +59,7 @@
             this.panelcontenedor.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelcontenedor.Location = new System.Drawing.Point(234, 48);
             this.panelcontenedor.Name = "panelcontenedor";
-            this.panelcontenedor.Size = new System.Drawing.Size(1050, 567);
+            this.panelcontenedor.Size = new System.Drawing.Size(1050, 602);
             this.panelcontenedor.TabIndex = 5;
             this.panelcontenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcontenedor_Paint);
             // 
@@ -76,7 +77,7 @@
             // 
             // pictureboss
             // 
-            this.pictureboss.Image = ((System.Drawing.Image)(resources.GetObject("pictureboss.Image")));
+            this.pictureboss.Image = global::RegistroExpedientes.Properties.Resources.c_removebg_preview__1_;
             this.pictureboss.Location = new System.Drawing.Point(0, 0);
             this.pictureboss.Name = "pictureboss";
             this.pictureboss.Size = new System.Drawing.Size(60, 48);
@@ -107,24 +108,25 @@
             this.btnregistros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.btnregistros.Image = ((System.Drawing.Image)(resources.GetObject("btnregistros.Image")));
             this.btnregistros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnregistros.Location = new System.Drawing.Point(0, 267);
+            this.btnregistros.Location = new System.Drawing.Point(0, 218);
             this.btnregistros.Name = "btnregistros";
             this.btnregistros.Size = new System.Drawing.Size(263, 43);
             this.btnregistros.TabIndex = 6;
-            this.btnregistros.Text = "Registros";
+            this.btnregistros.Text = "Registros Penales";
             this.btnregistros.UseVisualStyleBackColor = true;
             this.btnregistros.Click += new System.EventHandler(this.btnvendedores_Click);
             // 
             // panelmenu
             // 
             this.panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.panelmenu.Controls.Add(this.bton_violencia);
             this.panelmenu.Controls.Add(this.button3);
             this.panelmenu.Controls.Add(this.button2);
             this.panelmenu.Controls.Add(this.btnregistros);
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 48);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(250, 567);
+            this.panelmenu.Size = new System.Drawing.Size(250, 602);
             this.panelmenu.TabIndex = 3;
             this.panelmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelmenu_Paint);
             // 
@@ -139,7 +141,7 @@
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 196);
+            this.button3.Location = new System.Drawing.Point(0, 156);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(263, 43);
             this.button3.TabIndex = 11;
@@ -158,7 +160,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 527);
+            this.button2.Location = new System.Drawing.Point(0, 562);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(263, 40);
             this.button2.TabIndex = 10;
@@ -233,11 +235,30 @@
             this.paneltitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.paneltitulo_Paint);
             this.paneltitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneltitulo_MouseDown);
             // 
+            // bton_violencia
+            // 
+            this.bton_violencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bton_violencia.FlatAppearance.BorderSize = 0;
+            this.bton_violencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.bton_violencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.bton_violencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bton_violencia.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bton_violencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.bton_violencia.Image = ((System.Drawing.Image)(resources.GetObject("bton_violencia.Image")));
+            this.bton_violencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bton_violencia.Location = new System.Drawing.Point(0, 281);
+            this.bton_violencia.Name = "bton_violencia";
+            this.bton_violencia.Size = new System.Drawing.Size(263, 43);
+            this.bton_violencia.TabIndex = 12;
+            this.bton_violencia.Text = "Violencia Intrafamiliar";
+            this.bton_violencia.UseVisualStyleBackColor = true;
+            this.bton_violencia.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 615);
+            this.ClientSize = new System.Drawing.Size(1284, 650);
             this.Controls.Add(this.panelmenu);
             this.Controls.Add(this.panelcontenedor);
             this.Controls.Add(this.paneltitulo);
@@ -275,6 +296,7 @@
         private System.Windows.Forms.PictureBox btnmin;
         private System.Windows.Forms.PictureBox btnmax;
         private System.Windows.Forms.Panel paneltitulo;
+        private System.Windows.Forms.Button bton_violencia;
     }
 }
 

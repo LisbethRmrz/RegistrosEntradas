@@ -73,7 +73,7 @@
             this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkLabel1.ImageKey = "(ninguno)";
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(353, 224);
+            this.linkLabel1.Location = new System.Drawing.Point(355, 215);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(66, 18);
             this.linkLabel1.TabIndex = 10;
@@ -98,11 +98,14 @@
             this.RecuperarBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RecuperarBT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecuperarBT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.RecuperarBT.Location = new System.Drawing.Point(286, 180);
+            this.RecuperarBT.Image = global::RegistroExpedientes.Properties.Resources.buscar;
+            this.RecuperarBT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RecuperarBT.Location = new System.Drawing.Point(276, 170);
             this.RecuperarBT.Name = "RecuperarBT";
-            this.RecuperarBT.Size = new System.Drawing.Size(211, 30);
+            this.RecuperarBT.Size = new System.Drawing.Size(225, 30);
             this.RecuperarBT.TabIndex = 8;
             this.RecuperarBT.Text = "Recuperar contraseña";
+            this.RecuperarBT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RecuperarBT.UseVisualStyleBackColor = false;
             this.RecuperarBT.Click += new System.EventHandler(this.RecuperarBT_Click);
             // 

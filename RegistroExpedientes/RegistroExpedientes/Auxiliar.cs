@@ -95,18 +95,6 @@ namespace RegistroExpedientes
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnslide_Click(object sender, EventArgs e)
-        {
-            if (panelmenu.Width == 230)
-            {
-                panelmenu.Width = 55;
-            }
-            else
-            {
-                panelmenu.Width = 230;
-            }
-        }
-
         private void btnrestart_Click(object sender, EventArgs e)
         {
             btnrestart.Visible = false;
@@ -116,6 +104,36 @@ namespace RegistroExpedientes
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login log = new login();
+            log.Show();
+        }
+
+
+        private void btnslide_Click(object sender, EventArgs e)
+        {
+            if (panelmenu.Width == 250)
+            {
+                panelmenu.Width = 45;
+            }
+            else
+            {
+                panelmenu.Width = 250;
+            }
+        }
+
+        private void btnregistros_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormInPanel<registros>();
+        }
+
+        private void bton_violencia_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel<violencia>();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             this.Close();
             login log = new login();

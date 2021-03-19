@@ -47,7 +47,7 @@ namespace RegistroExpedientes
         {
             try
             {
-                da = new SqlDataAdapter("select id as [No.], exp_año as [Expediente], fechain as [Entrada], nombre as [Nombre], apellido as [Apellido], infracciones as [Infracciones], ofendidos as [Ofendido(s)], audienciainicial as [Audiencia Inicial], numpag as [Página], observaciones as [Observaciones] from datos", con);
+                da = new SqlDataAdapter("select id as [No.], exp_año as [Expediente], fechain as [Entrada], nombre as [Nombre], apellido as [Apellido], infracciones as [Infracciones], ofendidos as [Ofendido(s)], audienciainicial as [Audiencia Inicial], numpag as [Folio], observaciones as [Resolución] from datos", con);
                 dt = new DataTable();
                 da.Fill(dt);
                 dgv.DataSource = dt;
@@ -73,6 +73,23 @@ namespace RegistroExpedientes
             catch (Exception ex)
             {
                 MessageBox.Show("No se pudieron cargar los Usuarios");
+                ex.ToString();
+            }
+        }
+
+        public void CargarRegistrosViolencia(DataGridView dgv)
+        {
+            try
+            {
+                da = new SqlDataAdapter("select id as [No.], fechain as [Fecha], n_exp as [Expediente], nombre_victima as [Víctima], nombre_victimario as [Victimario], audiencia as [Aud_Preliminar], fecha_audiencia as [Audiencia], resolucion as [Resolución], observaciones as [Observaciones], folio as [Folio] from violencia", con);
+                dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudieron cargar los Registros");
                 ex.ToString();
             }
         }

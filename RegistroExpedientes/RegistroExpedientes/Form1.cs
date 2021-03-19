@@ -131,11 +131,16 @@ namespace RegistroExpedientes
             log.Show();
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormInPanel<violencia>();
+        }
+
         private void btnslide_Click(object sender, EventArgs e)
         {
             if (panelmenu.Width == 250)
             {
-                panelmenu.Width = 58;
+                panelmenu.Width = 45;
             }
             else
             {

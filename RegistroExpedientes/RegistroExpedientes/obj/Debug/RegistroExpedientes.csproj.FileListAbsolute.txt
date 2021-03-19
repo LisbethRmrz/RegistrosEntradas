@@ -12,11 +12,13 @@ C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\Regi
 C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.usuarios.resources
 C:\Users\Lisbeth\Desktop\Registros_Entradas\Expedientes\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.login.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.exe.config
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.exe.manifest
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.application
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.exe
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Debug\RegistroExpedientes.pdb
-C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.csprojResolveAssemblyReference.cache
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.ActualizarContraseña.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.Auxiliar.resources
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.begin.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.Form1.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.inicio.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.login.resources
@@ -25,5 +27,9 @@ C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Pro
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.registros.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.usuarios.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.csproj.GenerateResource.Cache
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.exe.manifest
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.application
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.exe
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.pdb
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.csprojResolveAssemblyReference.cache
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Debug\RegistroExpedientes.violencia.resources

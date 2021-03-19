@@ -52,7 +52,8 @@ namespace RegistroExpedientes
                     insert1.ExecuteNonQuery();
                     MessageBox.Show("Contraseña actualizada.", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     login LG = new login();
-                    this.Visible = false;
+                    //this.Visible = false;
+                    this.Close();
                     LG.Visible = true;
                 }
                 else
@@ -87,8 +88,8 @@ namespace RegistroExpedientes
         {
 
             this.Visible = false;
-            login log = new login();
-            log.Visible = true;
+            //login log = new login();
+            //log.Visible = true;
         }
     }
 }

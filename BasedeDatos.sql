@@ -10,7 +10,7 @@ apellido varchar(50) not null,
 infracciones varchar(30) not null,
 ofendidos varchar(200),
 audienciainicial date,
-numpag int,
+numpag varchar(10),
 observaciones varchar(200)
 );
 

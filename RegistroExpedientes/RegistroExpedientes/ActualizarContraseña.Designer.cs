@@ -70,12 +70,12 @@
             this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.linkLabel1.ImageKey = "(ninguno)";
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(405, 206);
+            this.linkLabel1.Location = new System.Drawing.Point(420, 203);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(92, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(63, 18);
             this.linkLabel1.TabIndex = 17;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Iniciar Sesión";
+            this.linkLabel1.Text = "Cancelar";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
@@ -83,7 +83,7 @@
             // 
             this.ConfimarContraseña.Location = new System.Drawing.Point(332, 109);
             this.ConfimarContraseña.Name = "ConfimarContraseña";
-            this.ConfimarContraseña.Size = new System.Drawing.Size(244, 20);
+            this.ConfimarContraseña.Size = new System.Drawing.Size(257, 20);
             this.ConfimarContraseña.TabIndex = 16;
             this.ConfimarContraseña.UseSystemPasswordChar = true;
             // 
@@ -91,7 +91,7 @@
             // 
             this.ContraseñaNueva.Location = new System.Drawing.Point(332, 52);
             this.ContraseñaNueva.Name = "ContraseñaNueva";
-            this.ContraseñaNueva.Size = new System.Drawing.Size(244, 20);
+            this.ContraseñaNueva.Size = new System.Drawing.Size(257, 20);
             this.ContraseñaNueva.TabIndex = 15;
             this.ContraseñaNueva.UseSystemPasswordChar = true;
             // 
@@ -103,11 +103,14 @@
             this.RecuperarBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RecuperarBT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecuperarBT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.RecuperarBT.Location = new System.Drawing.Point(332, 155);
+            this.RecuperarBT.Image = global::RegistroExpedientes.Properties.Resources.actualizar;
+            this.RecuperarBT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RecuperarBT.Location = new System.Drawing.Point(345, 155);
             this.RecuperarBT.Name = "RecuperarBT";
-            this.RecuperarBT.Size = new System.Drawing.Size(244, 36);
+            this.RecuperarBT.Size = new System.Drawing.Size(227, 34);
             this.RecuperarBT.TabIndex = 14;
             this.RecuperarBT.Text = "Actualizar contraseña";
+            this.RecuperarBT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RecuperarBT.UseVisualStyleBackColor = false;
             this.RecuperarBT.Click += new System.EventHandler(this.RecuperarBT_Click);
             // 
@@ -118,9 +121,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(139, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 19);
+            this.label2.Size = new System.Drawing.Size(194, 19);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Confirmar contraseña:";
+            this.label2.Text = "Confirmar Contraseña:";
             // 
             // label4
             // 
@@ -129,9 +132,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(166, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 19);
+            this.label4.Size = new System.Drawing.Size(158, 19);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Contraseña nueva:";
+            this.label4.Text = "Nueva Contraseña";
             // 
             // panel1
             // 

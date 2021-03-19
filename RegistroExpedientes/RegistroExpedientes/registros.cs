@@ -31,6 +31,10 @@ namespace RegistroExpedientes
         private void registros_Load(object sender, EventArgs e)
         {
             conectar.CargarRegistros(DatosRegistros);
+            DatosRegistros.Columns[0].Width = 50;
+            DatosRegistros.Columns[2].Width = 90;
+            DatosRegistros.Columns[3].Width = 125;
+            DatosRegistros.Columns[8].Width = 50;
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -199,6 +203,11 @@ namespace RegistroExpedientes
             dateaudiencia.Text = Convert.ToString(fila.Cells[7].Value);
             txtpag.Text = Convert.ToString(fila.Cells[8].Value);
             txtobservaciones.Text = Convert.ToString(fila.Cells[9].Value);
+
+            //DatosRegistros.Columns[0].Width = 100;
+            //DatosRegistros.Columns[8].Width = 10;
+            //DatosRegistros.AutoResizeColumns();
+            //DatosRegistros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -242,7 +251,7 @@ namespace RegistroExpedientes
         private void txtbuscar_TextChanged(object sender, EventArgs e)
         {
             conectar.Abrir();
-            da = new SqlDataAdapter("select id as [No.], exp_año as [Registro], fechain as [Entrada], nombre as [Nombre], apellido as [Apellido], infracciones as [Infracciones], ofendidos as [Ofendidos], audienciainicial as [Audiencia Inicial], observaciones as [Observaciones] from datos where nombre LIKE'%" + txtbuscar.Text + "%'", conectar.con);
+            da = new SqlDataAdapter("select id as [No.], exp_año as [Registro], fechain as [Entrada], nombre as [Nombre], apellido as [Apellido], infracciones as [Infracciones], ofendidos as [Ofendidos], audienciainicial as [Audiencia Inicial], numpag as [Folio], observaciones as [Resolución] from datos where nombre LIKE'%" + txtbuscar.Text + "%'", conectar.con);
             dt = new DataTable();
             da.Fill(dt);
             DatosRegistros.DataSource = dt;
@@ -253,12 +262,7 @@ namespace RegistroExpedientes
 
         private void txtnombres_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Space) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Asegurese de ingresar únicamente letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+           
         }
 
         private void txtapellidos_KeyPress(object sender, KeyPressEventArgs e)
@@ -273,12 +277,7 @@ namespace RegistroExpedientes
 
         private void txtofendidos_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Space) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Asegurese de ingresar únicamente letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+            
         }
 
         private void txtpag_KeyPress(object sender, KeyPressEventArgs e)
@@ -289,6 +288,11 @@ namespace RegistroExpedientes
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

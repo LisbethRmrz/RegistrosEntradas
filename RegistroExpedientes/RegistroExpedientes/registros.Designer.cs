@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registros));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registros));
             this.label1 = new System.Windows.Forms.Label();
-            this.btnlimpiar = new System.Windows.Forms.Button();
-            this.btneliminar = new System.Windows.Forms.Button();
-            this.btnactualizar = new System.Windows.Forms.Button();
-            this.btnguardar = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.DatosRegistros = new System.Windows.Forms.DataGridView();
@@ -64,6 +60,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtinfracciones = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btnactualizar = new System.Windows.Forms.Button();
+            this.btnguardar = new System.Windows.Forms.Button();
             this.codigo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DatosRegistros)).BeginInit();
             this.panelDGVprimero.SuspendLayout();
@@ -79,90 +79,6 @@
             this.label1.Size = new System.Drawing.Size(128, 32);
             this.label1.TabIndex = 15;
             this.label1.Text = "Entradas";
-            // 
-            // btnlimpiar
-            // 
-            this.btnlimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
-            this.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnlimpiar.FlatAppearance.BorderSize = 0;
-            this.btnlimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btnlimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btnlimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlimpiar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnlimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnlimpiar.Image")));
-            this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlimpiar.Location = new System.Drawing.Point(580, 210);
-            this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(163, 40);
-            this.btnlimpiar.TabIndex = 19;
-            this.btnlimpiar.Text = "Limpiar";
-            this.btnlimpiar.UseVisualStyleBackColor = false;
-            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
-            // 
-            // btneliminar
-            // 
-            this.btneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
-            this.btneliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btneliminar.FlatAppearance.BorderSize = 0;
-            this.btneliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btneliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneliminar.ForeColor = System.Drawing.Color.White;
-            this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
-            this.btneliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneliminar.Location = new System.Drawing.Point(852, 210);
-            this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(163, 40);
-            this.btneliminar.TabIndex = 18;
-            this.btneliminar.Text = "Eliminar";
-            this.btneliminar.UseVisualStyleBackColor = false;
-            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
-            // 
-            // btnactualizar
-            // 
-            this.btnactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
-            this.btnactualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnactualizar.FlatAppearance.BorderSize = 0;
-            this.btnactualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btnactualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnactualizar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnactualizar.ForeColor = System.Drawing.Color.White;
-            this.btnactualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnactualizar.Image")));
-            this.btnactualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnactualizar.Location = new System.Drawing.Point(319, 210);
-            this.btnactualizar.Name = "btnactualizar";
-            this.btnactualizar.Size = new System.Drawing.Size(163, 40);
-            this.btnactualizar.TabIndex = 17;
-            this.btnactualizar.Text = "Actualizar";
-            this.btnactualizar.UseVisualStyleBackColor = false;
-            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
-            // 
-            // btnguardar
-            // 
-            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
-            this.btnguardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnguardar.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnguardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnguardar.FlatAppearance.BorderSize = 0;
-            this.btnguardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btnguardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
-            this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnguardar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.ForeColor = System.Drawing.Color.White;
-            this.btnguardar.Image = ((System.Drawing.Image)(resources.GetObject("btnguardar.Image")));
-            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnguardar.Location = new System.Drawing.Point(46, 210);
-            this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(163, 40);
-            this.btnguardar.TabIndex = 16;
-            this.btnguardar.Text = "Guardar";
-            this.btnguardar.UseVisualStyleBackColor = false;
-            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
-            this.btnguardar.MouseLeave += new System.EventHandler(this.btnguardar_MouseLeave);
-            this.btnguardar.MouseHover += new System.EventHandler(this.btnguardar_MouseHover);
             // 
             // txtbuscar
             // 
@@ -209,7 +125,7 @@
             this.DatosRegistros.DefaultCellStyle = dataGridViewCellStyle2;
             this.DatosRegistros.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.DatosRegistros.EnableHeadersVisualStyles = false;
-            this.DatosRegistros.Location = new System.Drawing.Point(4, 29);
+            this.DatosRegistros.Location = new System.Drawing.Point(4, 42);
             this.DatosRegistros.Name = "DatosRegistros";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -237,9 +153,10 @@
             // 
             // txtnombres
             // 
-            this.txtnombres.Location = new System.Drawing.Point(255, 89);
+            this.txtnombres.Location = new System.Drawing.Point(255, 87);
+            this.txtnombres.Multiline = true;
             this.txtnombres.Name = "txtnombres";
-            this.txtnombres.Size = new System.Drawing.Size(278, 20);
+            this.txtnombres.Size = new System.Drawing.Size(278, 33);
             this.txtnombres.TabIndex = 13;
             this.txtnombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombres_KeyPress);
             // 
@@ -389,11 +306,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(576, 124);
+            this.label11.Location = new System.Drawing.Point(576, 122);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(146, 20);
+            this.label11.Size = new System.Drawing.Size(42, 20);
             this.label11.TabIndex = 31;
-            this.label11.Text = "Número de Página";
+            this.label11.Text = "Folio";
             // 
             // dateaudiencia
             // 
@@ -422,9 +339,10 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(576, 89);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 20);
+            this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 27;
-            this.label7.Text = "Observaciones";
+            this.label7.Text = "Resolución";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -438,9 +356,10 @@
             // 
             // txtofendidos
             // 
-            this.txtofendidos.Location = new System.Drawing.Point(740, 18);
+            this.txtofendidos.Location = new System.Drawing.Point(740, 14);
+            this.txtofendidos.Multiline = true;
             this.txtofendidos.Name = "txtofendidos";
-            this.txtofendidos.Size = new System.Drawing.Size(278, 20);
+            this.txtofendidos.Size = new System.Drawing.Size(278, 35);
             this.txtofendidos.TabIndex = 24;
             this.txtofendidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtofendidos_KeyPress);
             // 
@@ -470,6 +389,90 @@
             this.label2.Size = new System.Drawing.Size(179, 20);
             this.label2.TabIndex = 21;
             this.label2.Text = "Infracciones y Artículos";
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnlimpiar.FlatAppearance.BorderSize = 0;
+            this.btnlimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnlimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnlimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlimpiar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnlimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnlimpiar.Image")));
+            this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlimpiar.Location = new System.Drawing.Point(580, 210);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(163, 40);
+            this.btnlimpiar.TabIndex = 19;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = false;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            // 
+            // btneliminar
+            // 
+            this.btneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.btneliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btneliminar.FlatAppearance.BorderSize = 0;
+            this.btneliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneliminar.ForeColor = System.Drawing.Color.White;
+            this.btneliminar.Image = ((System.Drawing.Image)(resources.GetObject("btneliminar.Image")));
+            this.btneliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneliminar.Location = new System.Drawing.Point(852, 210);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(163, 40);
+            this.btneliminar.TabIndex = 18;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = false;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // btnactualizar
+            // 
+            this.btnactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.btnactualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnactualizar.FlatAppearance.BorderSize = 0;
+            this.btnactualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnactualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactualizar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizar.ForeColor = System.Drawing.Color.White;
+            this.btnactualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnactualizar.Image")));
+            this.btnactualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnactualizar.Location = new System.Drawing.Point(319, 210);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(163, 40);
+            this.btnactualizar.TabIndex = 17;
+            this.btnactualizar.Text = "Actualizar";
+            this.btnactualizar.UseVisualStyleBackColor = false;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
+            // 
+            // btnguardar
+            // 
+            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(110)))), ((int)(((byte)(144)))));
+            this.btnguardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnguardar.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnguardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnguardar.FlatAppearance.BorderSize = 0;
+            this.btnguardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnguardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(49)))), ((int)(((byte)(67)))));
+            this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnguardar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnguardar.ForeColor = System.Drawing.Color.White;
+            this.btnguardar.Image = ((System.Drawing.Image)(resources.GetObject("btnguardar.Image")));
+            this.btnguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnguardar.Location = new System.Drawing.Point(46, 210);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(163, 40);
+            this.btnguardar.TabIndex = 16;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
+            this.btnguardar.MouseLeave += new System.EventHandler(this.btnguardar_MouseLeave);
+            this.btnguardar.MouseHover += new System.EventHandler(this.btnguardar_MouseHover);
             // 
             // codigo
             // 

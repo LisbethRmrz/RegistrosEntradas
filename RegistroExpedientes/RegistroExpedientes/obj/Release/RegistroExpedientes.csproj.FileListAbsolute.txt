@@ -1,9 +1,7 @@
-C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.exe.config
-C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.exe
-C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.pdb
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.csprojResolveAssemblyReference.cache
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.ActualizarContraseña.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.Auxiliar.resources
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.begin.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.Form1.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.inicio.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.login.resources
@@ -12,9 +10,13 @@ C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Pro
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.registros.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.usuarios.resources
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.csproj.GenerateResource.Cache
-C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.exe
-C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.pdb
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.exe.config
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.exe.manifest
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.application
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.exe
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\bin\Release\RegistroExpedientes.pdb
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.exe.manifest
 C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.application
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.exe
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.pdb
+C:\Users\Lisbeth\Desktop\Carpetas\Personal_Lz\Registros_Entradas\Expedientes_Program\RegistroExpedientes\RegistroExpedientes\obj\Release\RegistroExpedientes.violencia.resources
